@@ -1,58 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221104 23:47:06.524" rpa="false" schemaversion="3">
-<suite id="s1" name="Hepsiburada" source="C:\Users\cansa\PycharmProjects\robotFramework\Automation\hepsiburada.robot">
-<test id="s1-t1" name="test1" line="20">
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221106 20:30:56.249" rpa="false" schemaversion="3">
+<suite id="s1" name="Amazon" source="C:\Users\cansa\PycharmProjects\robotFramework\Automation\amazon.robot">
+<test id="s1-t1" name="test1" line="15">
 <kw name=" starting setup" library="setup" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221104 23:47:06.743" level="INFO">Opening browser 'chrome' to base url 'https://hepsiburada.com'.</msg>
-<status status="PASS" starttime="20221104 23:47:06.742" endtime="20221104 23:47:11.298"/>
+<msg timestamp="20221106 20:30:56.526" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com/'.</msg>
+<status status="PASS" starttime="20221106 20:30:56.525" endtime="20221106 20:30:59.756"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221104 23:47:11.298" endtime="20221104 23:47:11.693"/>
+<status status="PASS" starttime="20221106 20:30:59.756" endtime="20221106 20:30:59.902"/>
 </kw>
-<status status="PASS" starttime="20221104 23:47:06.742" endtime="20221104 23:47:11.693"/>
+<status status="PASS" starttime="20221106 20:30:56.525" endtime="20221106 20:30:59.902"/>
 </kw>
-<kw name="insidegoogle" library="test">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221104 23:47:11.694" level="INFO">Opening browser 'chrome' to base url 'https://hepsiburada.com'.</msg>
-<status status="PASS" starttime="20221104 23:47:11.694" endtime="20221104 23:47:16.612"/>
+<kw name=" 4 gb apple mac laptop" library="setup">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${elektronik}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 20:30:59.903" level="INFO">Clicking element '//span[@class='hm-icon-label']'.</msg>
+<status status="PASS" starttime="20221106 20:30:59.903" endtime="20221106 20:31:00.877"/>
 </kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${amazonUrl}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221104 23:47:16.612" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com'.</msg>
-<status status="PASS" starttime="20221104 23:47:16.612" endtime="20221104 23:47:19.446"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221106 20:31:01.877" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221106 20:31:00.877" endtime="20221106 20:31:01.877"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221104 23:47:19.446" endtime="20221104 23:47:19.570"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${bilgisayar/laptop}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 20:31:01.878" level="INFO">Clicking element '//a[@data-menu-id='6']'.</msg>
+<status status="PASS" starttime="20221106 20:31:01.878" endtime="20221106 20:31:01.953"/>
 </kw>
-<status status="PASS" starttime="20221104 23:47:11.693" endtime="20221104 23:47:19.570"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${dizustubilgisayar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 20:31:01.954" level="INFO">Clicking element '//a[text()='Computers &amp; Tablets']'.</msg>
+<status status="PASS" starttime="20221106 20:31:01.953" endtime="20221106 20:31:02.521"/>
 </kw>
-<kw name="tear down setup" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221106 20:31:03.522" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221106 20:31:02.522" endtime="20221106 20:31:03.522"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${laptop}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 20:31:03.524" level="INFO">Clicking element '//span[text()='Laptops']'.</msg>
+<status status="PASS" starttime="20221106 20:31:03.523" endtime="20221106 20:31:06.827"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${apple}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 20:31:06.828" level="INFO">Clicking element '(//span[text()='Apple'])[1]'.</msg>
+<status status="PASS" starttime="20221106 20:31:06.827" endtime="20221106 20:31:06.989"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221106 20:31:07.990" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221106 20:31:06.989" endtime="20221106 20:31:07.990"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//span[text()='4 GB']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221106 20:31:07.990" endtime="20221106 20:31:08.274"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${4 gb}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 20:31:08.274" level="INFO">Clicking element '//span[text()='4 GB']'.</msg>
+<status status="PASS" starttime="20221106 20:31:08.274" endtime="20221106 20:31:08.339"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221106 20:31:09.341" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221106 20:31:08.339" endtime="20221106 20:31:09.341"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ilk urun}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221106 20:31:09.341" level="INFO">Clicking element '//span[@class='a-size-base-plus a-color-base a-text-normal']'.</msg>
+<status status="PASS" starttime="20221106 20:31:09.341" endtime="20221106 20:31:13.492"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${uruntitle}</arg>
+<arg>${actualtitle}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221106 20:31:13.493" level="INFO">Verifying element '//span[@id='productTitle']' contains exact text 'Apple MacBook Air with Intel Core i5, 1.6GHz, (13-inch, 4GB,128GB SSD) - Silver (Renewed)'.</msg>
+<status status="PASS" starttime="20221106 20:31:13.492" endtime="20221106 20:31:13.544"/>
+</kw>
+<status status="PASS" starttime="20221106 20:30:59.902" endtime="20221106 20:31:13.544"/>
+</kw>
+<kw name="tear down setup" library="setup" type="TEARDOWN">
 <kw name="Sleep" library="BuiltIn">
 <arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221104 23:47:23.571" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20221104 23:47:19.571" endtime="20221104 23:47:23.571"/>
+<msg timestamp="20221106 20:31:17.544" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20221106 20:31:13.544" endtime="20221106 20:31:17.544"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221104 23:47:23.571" endtime="20221104 23:47:25.623"/>
+<status status="PASS" starttime="20221106 20:31:17.544" endtime="20221106 20:31:19.722"/>
 </kw>
-<status status="PASS" starttime="20221104 23:47:19.570" endtime="20221104 23:47:25.623"/>
+<status status="PASS" starttime="20221106 20:31:13.544" endtime="20221106 20:31:19.722"/>
 </kw>
-<status status="PASS" starttime="20221104 23:47:06.742" endtime="20221104 23:47:25.623"/>
+<status status="PASS" starttime="20221106 20:30:56.525" endtime="20221106 20:31:19.722"/>
 </test>
-<status status="PASS" starttime="20221104 23:47:06.527" endtime="20221104 23:47:25.624"/>
+<status status="PASS" starttime="20221106 20:30:56.254" endtime="20221106 20:31:19.723"/>
 </suite>
 <statistics>
 <total>
@@ -61,7 +121,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Hepsiburada">Hepsiburada</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Amazon">Amazon</stat>
 </suite>
 </statistics>
 <errors>

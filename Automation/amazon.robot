@@ -3,21 +3,14 @@ Library     SeleniumLibrary
 Resource    ../Resources/setup.resource
 Resource    test.robot
 
+
+
 Test Setup   starting setup
-
-*** Keywords ***
-
-
-
-
-
+Test Teardown   tear down setup
 
 *** Variables ***
 
 
-
 *** Test Cases ***
 test1
-      #starting setup
-      insidegoogle
-      tear down setup
+      4 gb apple mac laptop
